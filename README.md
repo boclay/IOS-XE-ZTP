@@ -43,7 +43,7 @@ Our solution will leverage the following Cisco technologies
 
 * Bob Clay <boclay@cisco.com> - Global Enterprise
 * Ameron Sheikh <imsheikh@cisco.com> - Commercial
-* Jason Whiteaker <jawhitea@cisco.com> - CX America
+* Jason Whiteaker <jawhitea@cisco.com> - Customer Experience
 
 
 ## Solution Components
