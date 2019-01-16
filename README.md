@@ -18,23 +18,19 @@ Proposed Solution - Create a Python script with supporting services to auto-prov
 
 The solution includes the following technologies:
 
+Cisco Technology:
 - Catalyst 9000 and 3650 series switches
 - Cisco ENCS 5400 Branch NFV Platform
 - Cisco ISRv virtual router
 - IOS XE 16.9 with IOx guestshell support
 - IBNS 2.0
+
+Open Source:
 - Ubuntu Linux server (open source)
 - Apache2 WebServer (open source)
 - ISC DHCP Server (open source)
 - Node.js json-server (open source)
 - Python 2.7 (open source)
-
-Our solution will leverage the following Cisco technologies
-
-* [Catalyst 9300](http://www.cisco.com/go/catalyst9000)
-* [Catalyst 3650](http://www.cisco.com/go/3650)
-* [IOS XE] (https://www.cisco.com/c/en/us/products/ios-nx-os-software/ios-xe/index.html)
-
 
 ## Team Members
 
