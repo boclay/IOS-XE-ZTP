@@ -91,12 +91,20 @@ Catalyst 9300 and 3650 switches are examples of devices which can be provisioned
 
 Provide a brief overview of how to use the solution  -->
 
-
+To begin, 
 
 ## Installation
 
 How to install or setup the project for use.
 
+The following steps can be used to install the solution:
+* Build an Ubuntu VM instance
+* Install ISC DHCP server
+* Install Apache2 Web server
+* Install Node.js
+* Place the csv2json.py and serial-ip.csv files in a common directory
+
+The Ubuntu server must be reachable from the subnet where the device is to be provisioned.
 
 ## Documentation
 
