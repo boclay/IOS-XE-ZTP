@@ -91,7 +91,9 @@ Catalyst 9300 and 3650 switches are examples of devices which can be provisioned
 
 Provide a brief overview of how to use the solution  -->
 
-To begin, 
+Plug the switch management port into the network and turn on the power. The switch will download ZTP.py and begin executing the script. In about 5 minutes, the switch will be on the network and fully provisioned.
+
+Note - The solution requires that the startup-config is blank. If the switch has previously been provisioned, this can be accomplished by executing a 'write erase' followed by a 'reload' command. Remember not to save the running config when requested.
 
 ## Installation
 
@@ -113,12 +115,15 @@ Follow these steps to config the solution and start the service:
 
 3. Place the csv2json.py and serial-ip.csv files in a common directory.
 
-4. Run the shell script, "start-json-server.sh" which starts the Node.js service.
+4. Run the shell script, "start-json-server.sh" to start the Node.js service.
 
 ## Documentation
 
 Pointer to reference documentation for this project.
 
+For more informaiton on ZTP with IOS XE 16.9, please refer to these documents...
+
+[ZTP] (https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/prog/configuration/169/b_169_programmability_cg/zero_touch_provisioning.html)
 
 ## License
 
