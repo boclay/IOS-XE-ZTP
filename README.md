@@ -123,7 +123,7 @@ Pointer to reference documentation for this project.
 
 For more informaiton on ZTP with IOS XE 16.9, please refer to these documents...
 
-[ZTP] (https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/prog/configuration/169/b_169_programmability_cg/zero_touch_provisioning.html)
+[ZTP](https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/prog/configuration/169/b_169_programmability_cg/zero_touch_provisioning.html)
 
 ## License
 
