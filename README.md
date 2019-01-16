@@ -102,9 +102,17 @@ The following steps can be used to install the solution:
 * Install ISC DHCP server
 * Install Apache2 Web server
 * Install Node.js
-* Place the csv2json.py and serial-ip.csv files in a common directory
+* Copy files to the appropriate destinations
 
 The Ubuntu server must be reachable from the subnet where the device is to be provisioned.
+
+For the DHCP service, create a DHCP scope with Option 67 defined in "/etc/dhcp/dhcpd.conf"
+
+For the web server, copy ZTP.py and IBNS2.cfg into "/var/www/html"
+
+Place the csv2json.py and serial-ip.csv files in a common directory.
+
+Run the shell script, "start-json-server.sh" which starts the Node.js service.
 
 ## Documentation
 
