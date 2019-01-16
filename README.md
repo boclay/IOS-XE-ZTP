@@ -97,14 +97,15 @@ To begin,
 
 How to install or setup the project for use.
 
-The following steps can be used to install the solution:
+The following activities are required for setup:
 * Build an Ubuntu VM instance
 * Install ISC DHCP server
 * Install Apache2 Web server
 * Install Node.js
-* Copy files to the appropriate destinations
 
 The Ubuntu server must be reachable from the subnet where the device is to be provisioned.
+
+Follow these steps to config the solution and start the service:
 
 1. Create a DHCP scope with Option 67 defined in "/etc/dhcp/dhcpd.conf"
 
