@@ -53,15 +53,17 @@ Our solution will leverage the following Cisco technologies
 
 Provide a brief overview of the components involved with this project. e.g Python /  -->
 
-Solution components include
+Solution components include:
 
 * Files
 * Open Source Tools
 * Catalyst 9k, 3850, or 3650 switches running IOS XE 16.9
 
+# Files
+
 The files posted for this project include two Python scripts, a CSV file, and an IOS template.
 
-The ZTP.py script contains the main Python program that runs in Guest Shell on the device. This script is automatically downloaded from a web server which is specified by the DHCP server when the network device boots for the first time.
+The ZTP.py script contains the main Python program that runs in Guest Shell on the device. This script is automatically downloaded from a web server as identified in the DHCP reply when the network device boots onto the network for the first time.
 
 The csv2json.py script is a server-side script which retrieves a list of devices and associated attributes from a CSV file and creates a JSON file. The Node.js service uses the JSON file to return device attributes based on the device serial number.
 
