@@ -5,7 +5,7 @@ Code for ZTP with IOS XE 16.9
 
 ## Business/Technical Challenge
 
-Business Problem - Legacy devices in the customer network are approaching end of life milestones and need to be replaced. However, the customer does not have enough staff resources to deploy the required quantity of new Cisco networking equipment. Additionally, new customer deployments are prone to error due to manual provisioning.
+Business Problem - Legacy devices in the customer network are approaching end of life milestones and need to be replaced. However, the customer does not always have enough staff resources to deploy the required quantity of new Cisco networking equipment. Additionally, new customer deployments are prone to error due to manual provisioning.
 
 Technical Challenge - Develop a solution which enables the customer to auto-provision devices thus reducing deployment errors and saving staff resource time.
 
@@ -52,6 +52,22 @@ Our solution will leverage the following Cisco technologies
 <!-- This does not need to be completed during the initial submission phase  
 
 Provide a brief overview of the components involved with this project. e.g Python /  -->
+
+Solution components include
+
+* Files
+* Open Source Tools
+* Catalyst 9k, 3850, or 3650 switches running IOS XE 16.9
+
+The files posted for this project include two Python scripts, a CSV file, and an IOS template.
+
+The ZTP.py script contains the main Python program that runs in Guest Shell on the device. This script is automatically downloaded from a web server which is specified by the DHCP server when the network device boots for the first time.
+
+The csv2json.py script is a server-side script which retrieves a list of devices and associated attributes from a CSV file and creates a JSON file. The Node.js service uses the JSON file to return device attributes based on the device serial number.
+
+The serial-ip.csv file is a comma separated variable (CSV) file which contains a list of devices based on serial number. Each serial number corresponds to a list of device attributes such as hostname, IP address, etc. related to the devices' location in the network. 
+
+The IBNS2.cfg file is an IOS template that contains commands for configuring an IOS XE 16 switch for use with ISE in a high security enviornment. The IOS configuraiton includes commands for AAA, Device Profiling, and an Interface Template for dot1x for the access ports. 
 
 
 ## Usage
