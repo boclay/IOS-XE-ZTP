@@ -31,12 +31,10 @@ The solution includes the following technologies:
 
 Our solution will leverage the following Cisco technologies
 
-* [Catalyst 9300] (http://www.cisco.com/go/catalyst9000)
-* [Catalyst 3650] (http://www.cisco.com/go/3650)
+* [Catalyst 9300](http://www.cisco.com/go/catalyst9000)
+* [Catalyst 3650](http://www.cisco.com/go/3650)
 * [IOS XE] (https://www.cisco.com/c/en/us/products/ios-nx-os-software/ios-xe/index.html)
-* [IBNS 2.0] (http://www.cisco.com/go/ibns)
-* [ZTP] (https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/prog/configuration/169/b_169_programmability_cg/zero_touch_provisioning.html)
-* [IOx] (https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/prog/configuration/169/b_169_programmability_cg/guest_shell.html)
+
 
 ## Team Members
 
@@ -121,9 +119,12 @@ Follow these steps to config the solution and start the service:
 
 Pointer to reference documentation for this project.
 
-For more informaiton on ZTP with IOS XE 16.9, please refer to these documents...
+For more informaiton on Zero Touch Provisioning and Lifecycle Programmability with IOS XE 16.9, please refer to the following documents...
 
-[ZTP](https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/prog/configuration/169/b_169_programmability_cg/zero_touch_provisioning.html)
+* [Cisco IOS XE Progammability - Automating Device Lifecycle Management](https://www.cisco.com/c/dam/en/us/products/collateral/enterprise-networks/nb-06-ios-xe-prog-ebook-cte-en.pdf)
+* [ZTP in IOS XE 16.9 Programmability Guide](https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/prog/configuration/169/b_169_programmability_cg/zero_touch_provisioning.html)
+* [Guest Shell with IOx](https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/prog/configuration/169/b_169_programmability_cg/guest_shell.html)
+* [Identity Based Network Services 2.0](http://www.cisco.com/go/ibns)
 
 ## License
 
