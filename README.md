@@ -57,7 +57,7 @@ Solution components include:
 
 * Files
 * Open Source Tools
-* Catalyst 9k, 3850, or 3650 switches running IOS XE 16.9
+* Devices to be Provisioned
 
 ### Files
 
@@ -71,6 +71,19 @@ The serial-ip.csv file is a comma separated variable (CSV) file which contains a
 
 The IBNS2.cfg file is an IOS template that contains commands for configuring an IOS XE 16 switch for use with ISE in a high security enviornment. The IOS configuraiton includes commands for AAA, Device Profiling, and an Interface Template for dot1x for the access ports. 
 
+### Open Source Tools
+
+The Open Source tools used for this project include the ISC DHCP server, Node.js, and Apache2 web server. These services are hosted on an Ubuntu virtual machine running on an ENCS-5400 appliance. 
+
+The ISC DHCP server provides network parameters for the Catalyst switches upon boot-up. The DHCP scope includes Option 67 which specifies the URL for the ZTP.py script.
+
+The Node.js server reads the JSON file which was created from the serial-ip.csv file. The JSON file contains the device attributes, and it returns those attributes as a REST reply back to the ZTP.py script running on the network device.
+
+The Apache2 web server hosts the ZTP.py file and the IBNS2.cfg template.
+
+### Devices to be Provisioned
+
+Catalyst 9300 and 3650 switches are examples of devices which can be provisioned with this project. These devices run IOS XE 16.9 and therefore include the Guest Shell feature with onbox Python support. 
 
 ## Usage
 
